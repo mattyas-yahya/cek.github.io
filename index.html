@@ -293,17 +293,20 @@ document.getElementById("bep").value =z/(w-s);
 <script>
     function beb()
     {
-var tbtx=document.getElementById("tbt").value =0;
-// if (tbtx = 0) 
-// {
-//    greeting = "Good day";
-//} else {
-//    greeting = "Good evening";
-//} 
 var q=parseFloat(document.test.tbt.value);
 var b=parseFloat(document.test.Harga_Jual.value);
+var c=parseFloat(document.test.Harga_Pokok.value);
 var x=parseFloat(document.test.tbv.value);
-document.getElementById("bep").value =q/(b-x);
+var tbtx=document.getElementById("tbt");
+if (q == 0) 
+{
+  document.getElementById("bep").value =b-c;
+} else 
+{
+   document.getElementById("bep").value =q/(b-x);
+} 
+
+
     }
  </script>
   </body>
